@@ -133,6 +133,7 @@ header {
 	display: block;
 	float: left;
 	margin: 1% 0 1% 1.6%;
+
 }
 
 .col:first-child {
@@ -147,6 +148,7 @@ header {
 /*  GRID OF THREE */
 .span_3 {
 	width: 100%;
+	border: 1px #333333;
 }
 .span_2 {
 	width: 66.13%;

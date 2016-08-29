@@ -1,0 +1,40 @@
+body {
+  text-align: left;
+  background: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'Lato', sans-serif; Arial, Helvetica;
+  /* setting margin and padding to 0 for JQuery sticky footer */
+  margin: ;
+  padding: 0;
+}
+
+
+
+.container {
+  position: absolute;
+  width: 31.250em;
+  height: 31.250em;
+  top: 10%;
+  left: 35%;
+  /*margin: -100px 0 0 -150px;*/
+}
+
+h2 {
+  color: #333333;
+  text-align: center;
+  font-size: 1.00em;
+  z-index: 0;
+  text-align: left;
+}
+
+p {
+  color: #333333;
+  text-align: center;
+  font-size: 0.75em;
+  z-index: 0;
+  text-align: left;
+}
+
