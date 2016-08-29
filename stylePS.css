@@ -1,0 +1,222 @@
+body {
+	text-align: center;
+	background: #ffffff;  /* #0e2d4c e5eaec*/
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #333;
+	font-family: 'Lato', sans-serif; Arial, Helvetica;
+	/* setting margin and padding to 0 for JQuery sticky footer */
+	margin: 0;
+	padding: 0;
+}
+
+
+/* #wrapper {
+	min-height: 100%;
+	position: relative;
+	padding-bottom: 7.500em;  Height of the footer element
+} */
+
+header {
+	position: fixed;
+	width: 100%;
+	height: 10%;
+
+	margin: -0.75em 1em 0 1em;
+	padding: 0;
+	background: #ffffff;
+	border-bottom: solid 0.05em #7a7a7a;
+	overflow: hidden;
+
+}
+
+#nav {
+	margin: 2.000em 1.125em 0 0;
+	padding: 0 1.00em 0 0;
+
+}
+
+#nav ul {
+      list-style: none;
+      text-align: right;
+      padding: 0;
+      margin: 0;
+
+}
+
+#nav a {
+    display: inline-block;
+    float: right;
+	text-decoration: none;
+	text-align: left;
+	font-size: 0.85em;
+	color: #333333;
+	padding: 0 0.50em 0 0.50em;
+
+}
+/*add float element for horizontal alignment*/
+
+#nav a:after {
+	content: '';
+	/*content property tell you what to insert before/after, empty w/o txt*/
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+#nav a:hover:after {
+	width: 105%;
+	background-color: #68a7ca;
+	border-radius: 1em;
+}
+
+.me {
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+	font-size: 0.90em;
+	color: #333333;
+	margin: 0 0 0 1.175em;
+}
+
+.nav a:hover {
+	border-radius: 5px;
+	background-color: #68a7ca;
+
+}
+ .nav a:before {
+	content: "";
+  	position: absolute;
+  	width: 100%;
+  	height: 0.01;
+  	bottom: 0;
+  	left: 0;
+  	visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav > a:hover:before,
+.nav > a:focus:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+
+
+
+#portfolio {
+	/*clear: both;
+	padding: 0px;
+	margin: 0px; */
+     width: 80%;
+    margin: 0 auto;
+    padding: 5em; 0;
+}
+
+/*  GROUPING
+.grid:before,
+.grid:after { content:""; display:table; }
+.grid:after { clear:both;}
+.grid { zoom:1; /* For IE 6/7  }  */
+
+/* column set up */
+.col {
+	display: block;
+	float: left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child {
+	margin-left: 0;
+}
+
+.span_1:nth-child(3n+1){
+	clear: left;
+	margin-left: 0;
+
+}
+/*  GRID OF THREE */
+.span_3 {
+	width: 100%;
+}
+.span_2 {
+	width: 66.13%;
+}
+.span_1 {
+	width: 32.26%;
+}
+
+/* GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {
+		margin: 1% 0 1% 0%;
+	}
+	.span_3, .span_2, .span_1 {
+		width: 100%;
+	}
+}
+
+
+h1 {
+	font: 2.25em;
+}
+
+h3 {
+	font: 1em;
+	color: #333333;
+}
+
+p {
+	color: #333333;
+	text-align: center;
+	font-size: 0.75em;
+	z-index: 0;
+}
+
+
+
+ .site-footer {
+	height: 12em;
+	background-image: url("http://i63.tinypic.com/2vkwxfk.png");
+ 	/* z-index:-1; */
+	bottom: 0;
+	width: 80%;
+	position: relative;
+	padding: 0 10% 0 10%;
+}
+
+.copyright_info {
+	position: absolute;
+	width: 80%;
+	bottom: 0.75em;
+	font-size: 0.60em;
+}
+
+.description {
+	text-align: left;
+	float: left;
+	width: 15%;
+	height: 10%;
+    text-decoration: none;
+    margin: 1.00em 4.00em 0 0;
+    font-size: 0.700em;
+}
+
+.contact_social_media {
+	text-align: left;
+	float: right;
+	width: 15%;
+	height: 10%;
+    text-decoration: none;
+    margin: 1.00em  0 0;
+    font-size: 0.700em;
+}
