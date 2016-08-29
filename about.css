@@ -38,3 +38,17 @@ p {
   text-align: left;
 }
 
+button {
+  display: block;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 1em;
+  width: 90px;
+  height: 20px;
+  margin-top: 1em;
+  /* margin: 0 0 0 0; padding: 2em 0 2em 0; */
+  border: 1px solid #ededed;
+  color: #333;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
